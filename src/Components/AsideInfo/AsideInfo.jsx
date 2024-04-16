@@ -6,7 +6,7 @@ import phone from './public/icons-phone.svg';
 
 const AsideInfo = () => {
   return (
-    <aside className="aside__info">
+    <aside className={classes.aside__info}>
       <img className={classes.avatar} src={photo} alt="" />
       <ul className={classes.contact}>
         <li className={classes.contact__item}>

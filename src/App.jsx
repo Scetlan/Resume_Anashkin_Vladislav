@@ -22,7 +22,6 @@ function App() {
           <Tabs.TabPane tab="Education" key="3" destroyInactiveTabPane></Tabs.TabPane>
         </Tabs>
       </header>
-      <main className=""></main>
     </div>
   );
 }

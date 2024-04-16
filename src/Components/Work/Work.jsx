@@ -11,7 +11,7 @@ const Work = () => {
             <span className={classes.time}>2020-н.в</span>
           </div>
           <div className={classes.description}>
-            <ul className="tasks">
+            <ul className={classes.tasks}>
               <li className={classes.task}>
                 Я увлечен программированием. С помощью неисчерпаемой мотивации и трудолюбия непрерывно обучаюсь новому,
                 изучаю новые технология, с помощью проб и ошибок становлюсь лучше как разработчик. Мне правится
