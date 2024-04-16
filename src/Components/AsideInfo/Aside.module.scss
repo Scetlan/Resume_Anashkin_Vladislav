@@ -1,0 +1,44 @@
+.avatar {
+  width: 264px;
+  border-radius: 20px;
+}
+
+.contact {
+  display: grid;
+  row-gap: 15px;
+  padding-top: 20px;
+}
+
+.img__icon {
+  padding-right: 7px;
+}
+
+.contact__item {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(68, 103, 166);
+  .link {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(97, 125, 176);
+    &:focus {
+      color: rgb(87, 133, 220);
+    }
+    &:hover {
+      color: rgb(12, 59, 148);
+    }
+    &:active {
+      color: rgb(24, 52, 106);
+    }
+  }
+
+  &:focus {
+    border-bottom: 1px solid rgb(24, 52, 106);
+  }
+  &:hover {
+    border-bottom: 1px solid rgb(24, 52, 106);
+  }
+  &:active {
+    border-bottom: 1px solid rgb(24, 52, 106);
+  }
+}

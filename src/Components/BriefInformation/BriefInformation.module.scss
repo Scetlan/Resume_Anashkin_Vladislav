@@ -1,0 +1,31 @@
+.skills,
+.languages {
+  padding-top: 30px;
+}
+
+.desc {
+  font-style: italic;
+}
+
+.list-blog {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 25px;
+}
+
+.skill {
+  padding: 10px 15px;
+  color: aliceblue;
+  background-color: rgba(28, 59, 121);
+  border: 3px solid rgb(138, 171, 237);
+  border-radius: 100%;
+}
+
+.lang {
+  padding: 10px 15px;
+  color: rgba(28, 59, 121);
+  background-color: rgb(170, 195, 244);
+  border: 3px solid rgba(28, 59, 121);
+  border-radius: 20px;
+}

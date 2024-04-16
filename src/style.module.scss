@@ -1,0 +1,51 @@
+@import './Components/AsideInfo/Aside.module.scss';
+@import './Components/AsideInfo/Aside.module.scss';
+@import './Components/BriefInformation/BriefInformation.module.scss';
+@import './Components/Work/Work.module.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  font:
+    16px/1.4 'Open Sans',
+    sans-serif;
+  text-align: justify;
+
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(28, 59, 121);
+  border-bottom: 1px solid rgba(28, 59, 121, 0.396);
+
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: rgba(68, 103, 166, 0.68);
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  column-gap: 40px;
+
+  background-color: rgb(246, 246, 246);
+  border-radius: 20px;
+}
+
+.header {
+  width: 100%;
+}

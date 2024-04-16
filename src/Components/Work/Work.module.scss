@@ -1,0 +1,57 @@
+.organizations {
+  display: grid;
+  row-gap: 28px;
+}
+
+.organization {
+  border-bottom: 1px solid rgb(170, 195, 244);
+}
+
+.basic {
+  padding-bottom: 10px;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+
+.work-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(10 44 198 / 67%);
+}
+
+.time {
+  color: rgba(84, 107, 209, 0.67);
+}
+
+.task {
+  font-style: italic;
+  color: rgba(3, 3, 57, 0.775);
+}
+
+.tools-used {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tools-used__title {
+  color: rgb(0 47 255 / 67%);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.tool {
+  padding: 10px 15px;
+  color: aliceblue;
+  background-color: rgba(28, 59, 121);
+  border: 3px solid rgb(138, 171, 237);
+  border-radius: 100%;
+}
