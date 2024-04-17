@@ -1,30 +1,34 @@
+import { useContext } from 'react';
 import classes from './BriefInformation.module.scss';
+import { ContextBriefInformation } from '../../Content/Context';
 
 const BriefInformation = () => {
+  const { skills, aboutMeText, languages } = useContext(ContextBriefInformation);
+
   return (
     <div className={classes['tab-one']}>
       <div className="about-me">
         <h1 className="title">About me</h1>
-        <p className={classes.desc}>
-          Я увлечен программированием. С помощью неисчерпаемой мотивации и трудолюбия непрерывно обучаюсь новому, изучаю
-          новые технология, с помощью проб и ошибок становлюсь лучше как разработчик. Мне правится создавать
-          действительно полезные продукты, выстраивая согласованную архитектуру в соответствии с лучшими практиками.
-        </p>
+        <p className={classes.desc}>{aboutMeText}</p>
       </div>
       <div className={classes.skills}>
         <h2 className="title">Skills</h2>
         <ul className={classes['list-blog']}>
-          <li className={classes.skill}>Kotlin</li>
-          <li className={classes.skill}>SQL</li>
-          <li className={classes.skill}>Java</li>
-          <li className={classes.skill}>Go</li>
+          {skills.map(({ id, text }) => (
+            <li key={id} className={classes.skill}>
+              {text}
+            </li>
+          ))}
         </ul>
       </div>
       <div className={classes.languages}>
         <h1 className={classes.title}>Languages</h1>
         <ul className={classes['list-blog']}>
-          <li className={classes.lang}>Russian | Native</li>
-          <li className={classes.lang}>English | Flue</li>
+          {languages.map(({ id, text }) => (
+            <li key={id} className={classes.lang}>
+              {text}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

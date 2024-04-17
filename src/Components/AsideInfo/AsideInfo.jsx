@@ -1,32 +1,22 @@
 import classes from './Aside.module.scss';
-import photo from './photo/photo.jpeg';
-import gitHub from './public/icons8-github.svg';
-import telegram from './public/icons8-telegtam.svg';
-import phone from './public/icons-phone.svg';
+import { useContext } from 'react';
+import { ContextAsideInfo } from '../../Content/Context';
 
-const AsideInfo = () => {
+const AsideInfo = ({ photo }) => {
+  const contacts = useContext(ContextAsideInfo);
+
   return (
     <aside className={classes.aside__info}>
       <img className={classes.avatar} src={photo} alt="" />
       <ul className={classes.contact}>
-        <li className={classes.contact__item}>
-          <img className={classes.img__icon} src={gitHub} alt="gitHub" />
-          <a className={classes.link} href="https://github.com/vladis62">
-            github.com/vladis62
-          </a>
-        </li>
-        <li className={classes.contact__item}>
-          <img className={classes.img__icon} src={telegram} alt="telegramm" />
-          <a className={classes.link} href="https://t.me/vlad_os62">
-            @vlad_os62
-          </a>
-        </li>
-        <li className={classes.contact__item}>
-          <img className={classes.img__icon} src={phone} alt="phone" />
-          <a className={classes.link} href="tel:+79105700772">
-            +7 (910) 570-07-72
-          </a>
-        </li>
+        {contacts.map(({ id, svg, link, alt, text }) => (
+          <li key={id} className={classes.contact__item}>
+            <img className={classes.img__icon} src={svg} alt={alt} />
+            <a className={classes.link} href={link}>
+              {text}
+            </a>
+          </li>
+        ))}
       </ul>
     </aside>
   );

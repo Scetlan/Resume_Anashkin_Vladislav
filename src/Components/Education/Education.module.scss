@@ -1,0 +1,11 @@
+@import '../Work/Work.module.scss';
+@import '../BriefInformation/BriefInformation.module.scss';
+
+.education {
+  display: grid;
+  row-gap: 20px;
+}
+
+.institutions {
+  min-height: 250px;
+}

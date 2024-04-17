@@ -4,7 +4,9 @@
 }
 
 .organization {
-  border-bottom: 1px solid rgb(170, 195, 244);
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid rgb(170, 195, 244);
 }
 
 .basic {
@@ -13,6 +15,7 @@
 
 .tasks {
   display: grid;
+  width: 100%;
   row-gap: 10px;
 }
 
@@ -28,7 +31,7 @@
   row-gap: 30px;
 }
 
-.work-title {
+.organization-title {
   font-size: 20px;
   font-weight: 600;
   color: rgb(10 44 198 / 67%);
@@ -46,11 +49,13 @@
 .tools-used {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-top: 20px;
 }
 
 .tools-used__title {
+  margin-bottom: 10px;
   color: rgb(0 47 255 / 67%);
+  border-bottom: 0.5px solid rgba(121, 139, 216, 0.285);
 }
 
 .tools {
@@ -61,6 +66,7 @@
 }
 
 .tool {
+  font-size: 12px;
   padding: 10px 15px;
   color: aliceblue;
   background-color: rgba(28, 59, 121);
