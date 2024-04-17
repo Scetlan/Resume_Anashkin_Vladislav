@@ -1,17 +1,17 @@
-import { useContext } from 'react';
 import classes from './Education.module.scss';
 import { ContextEducation } from '../../Content/Context';
+import { useContext } from 'react';
 
-const Education = () => {
+function Education() {
   const { publicEducations, courses } = useContext(ContextEducation);
   return (
     <div className={classes.education}>
       <div className={classes.institutions}>
         <h2 className="institution-title">Institution</h2>
         <ul className={classes.organizations}>
-          {publicEducations.map(({ id, institution, experience }) => {
+          {publicEducations.map(({ institution, experience }) => {
             return (
-              <li key={id} className={classes.organization}>
+              <li key={institution} className={classes.organization}>
                 <div className="basic">
                   <h3 className={classes['organization-title']}>{institution}</h3>
                   <span className={classes.time}>{experience}</span>
@@ -24,9 +24,9 @@ const Education = () => {
       <div className={classes.courses}>
         <h2 className="course-title">Additional courses</h2>
         <ul className={classes.organizations}>
-          {courses.map(({ id, institution, experience, topic }) => {
+          {courses.map(({ institution, experience, topic }) => {
             return (
-              <li key={id} className={classes.organization}>
+              <li key={`${institution}-courses`} className={classes.organization}>
                 <div className={classes.basic}>
                   <h3 className={classes['organization-title']}>{institution}</h3>
                   <span className={classes.time}>{experience}</span>
@@ -39,6 +39,6 @@ const Education = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Education;

@@ -1,12 +1,11 @@
+import Education from './Components/Education/Education';
 import { Tabs } from 'antd';
 import classes from './style.module.scss';
 import BriefInformation from './Components/BriefInformation/BriefInformation';
 import AsideInfo from './Components/AsideInfo/AsideInfo';
 import Work from './Components/Work/Work';
-// import { ContextAsideInfo, ContextBriefInformation, ContextWorkExperience } from './Content/Context';
 import listContents from './Content/Content';
 import { ContextAsideInfo, ContextBriefInformation, ContextEducation, ContextWorkExperience } from './Content/Context';
-import Education from './Components/Education/Education';
 
 function App() {
   const content = listContents;

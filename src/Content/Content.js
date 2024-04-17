@@ -13,41 +13,40 @@ const listContents = {
   //контакты в разных messengers
   asideInfo: [
     {
-      id: 1,
       svg: gitHub,
       link: 'https://github.com/vladis62',
-      alt: 'gitHub',
+      alt: 'gitHub',//прописывать обязательно, выступает в качестве id
       text: 'github.com/vladis62'
     },
     {
-      id: 2,
       svg: telegram,
       link: 'https://t.me/vlad_os62',
-      alt: 'telegram',
+      alt: 'telegram',//прописывать обязательно, выступает в качестве id
       text: '@vlad_os62'
     },
     {
-      id: 3,
       svg: phone, //если ты добавил новый контакт, то создай ниже похожий объект и в под данным клучем передавай иконку.
       link: 'tel:+79105700772', //если у тебя нет ссылки, то передавай пустую строку ''
-      alt: 'phone',
+      alt: 'phone', //прописывать обязательно, выступает в качестве id
       text: '+7 (910) 570-07-72'
     },
   ],
   briefInformation: {
     skills: [
-      { id: 10, text: 'Git' },
-      { id: 11, text: 'Kotlin' },
-      { id: 12, text: 'Docker' },
-      { id: 13, text: 'Kafka' },
-      { id: 14, text: 'Java' },
-      { id: 15, text: 'SQL' }],// Список скиллов
+      'Git',
+      'Kotlin',
+      'Docker',
+      'Kafka',
+      'Java',
+      'SQL'],// Список скиллов
     aboutMeText: 'Я увлечен программированием. С помощью неисчерпаемой мотивации и трудолюбия непрерывно обучаюсь новому, изучаю новые технология, с помощью проб и ошибок становлюсь лучше как разработчик. Мне правится создавать действительно полезные продукты, выстраивая согласованную архитектуру в соответствии с лучшими практиками.',// About me текст к отображения
-    languages: [{ id: 20, text: 'Russian | Native' }, { id: 21, text: 'English | Flue' }],
+    languages: [
+      { id: 'Russian', text: 'Russian | Native' },
+      { id: 'English', text: 'English | Flue' },
+    ],
   },
   workExperience: [
     {
-      id: 29,
       nameСompany: 'Tinkoff',
       experience: '2020-н.в',
       tasks: [
@@ -62,20 +61,17 @@ const listContents = {
   education: {
     publicEducations: [
       {
-        id: 90,
         institution: 'ФГБОУ ВО "Рязанский Государственный Радиотехнический Университет им. В.Ф. Уткина", ФГБОУ ВО "Ргрту"',
         experience: '2009-2014',
       }
     ],
     courses: [
       {
-        id: 80,
         institution: 'Тинькофф Финтех',
         topic: 'Основы Java',
         experience: '2020',
       },
       {
-        id: 0,
         institution: 'Яндекс Практикум',
         topic: 'Алгоритмы и структуры данных',
         experience: '2024',

@@ -1,16 +1,16 @@
+import { ContextWorkExperience } from '../../Content/Context';
 import { useContext } from 'react';
 import classes from './Work.module.scss';
-import { ContextWorkExperience } from '../../Content/Context';
 
-const Work = () => {
+function Work() {
   const works = useContext(ContextWorkExperience);
   return (
     <div className={classes.works}>
       <h2 className="works-title">Place of work</h2>
       <ul className={classes.organizations}>
-        {works.map(({ id, nameСompany, experience, tasks, usedStack }) => {
+        {works.map(({ nameСompany, experience, tasks, usedStack }) => {
           return (
-            <li key={id} className={classes.organization}>
+            <li key={nameСompany} className={classes.organization}>
               <div className={classes.basic}>
                 <h3 className={classes['organization-title']}>{nameСompany}</h3>
                 <span className={classes.time}>{experience}</span>
@@ -26,7 +26,9 @@ const Work = () => {
                 <h3 className={classes['tools-used__title']}>Used Stack</h3>
                 <ul className={classes.tools}>
                   {usedStack.map(stack => (
-                    <li className={classes.tool}>{stack}</li>
+                    <li key={`${stack}-stack`} className={classes.tool}>
+                      {stack}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -36,6 +38,6 @@ const Work = () => {
       </ul>
     </div>
   );
-};
+}
 
 export default Work;

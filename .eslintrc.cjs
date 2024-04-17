@@ -5,7 +5,7 @@ module.exports = {
     jest: true,
   },
   ignorePatterns: ['node_modules', 'dist', 'build'],
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:react/jsx-runtime', 'prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:react/jsx-runtime', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -41,4 +41,4 @@ module.exports = {
       },
     },
   },
-}
+};

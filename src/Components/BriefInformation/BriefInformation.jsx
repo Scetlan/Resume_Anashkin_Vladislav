@@ -1,8 +1,8 @@
+import { ContextBriefInformation } from '../../Content/Context';
 import { useContext } from 'react';
 import classes from './BriefInformation.module.scss';
-import { ContextBriefInformation } from '../../Content/Context';
 
-const BriefInformation = () => {
+function BriefInformation() {
   const { skills, aboutMeText, languages } = useContext(ContextBriefInformation);
 
   return (
@@ -14,9 +14,9 @@ const BriefInformation = () => {
       <div className={classes.skills}>
         <h2 className="title">Skills</h2>
         <ul className={classes['list-blog']}>
-          {skills.map(({ id, text }) => (
-            <li key={id} className={classes.skill}>
-              {text}
+          {skills.map(skill => (
+            <li key={skill} className={classes.skill}>
+              {skill}
             </li>
           ))}
         </ul>
@@ -33,6 +33,6 @@ const BriefInformation = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BriefInformation;
