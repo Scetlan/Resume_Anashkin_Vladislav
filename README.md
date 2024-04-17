@@ -1,8 +1,26 @@
-# React + Vite
+## Запуск
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ссыдка на резюме: [здесь](resume-anashkin-vladislav.vercel.app)
 
-Currently, two official plugins are available:
+Для запуска у вас должен быть установлен [Node.js](http://nodejs.org)
+Для установки пакетов используется [npm](https://www.npmjs.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install -g npm
+```
+
+```bash
+$ git clone repository # Клонирование репозитория
+$ npm i # Установка зависимостей
+$ npm dev # Запуск в dev  режиме
+```
+
+```js
+//scripts vite
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "vite preview"
+```
+
+Чтобы изменить контент, зайдите в папку /src/Content/Content.js . Все необходимые подсказки указаны в комментариях.
