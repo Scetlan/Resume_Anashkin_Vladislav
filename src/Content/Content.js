@@ -43,7 +43,8 @@ const listContents = {
   },
   workExperience: [
     {
-      nameСompany: 'Tinkoff',
+      nameСompany: 'Tinkoff Bank',
+      link: 'https://www.tinkoff.ru/',
       experience: '2020-н.в',
       tasks: [
         'Спроектировал и разработал BPMN процесс скоринга авто;',
@@ -70,6 +71,7 @@ const listContents = {
     },//чтобы добавить организацию скопируй объект выше и создай новый через запятую. После меняешь значения (ключи не трогать!). Если захочешь что-то еще добавить, то пиши мне.
     {
       nameСompany: 'ПАО "завод "Красное знамя""',
+      link: 'https://www.kznamya.ru/#0',
       experience: '2020-2019',
       tasks: [
         'Разработка ПО для desktop приложений в кроссплатформенной среде разработки QT на языке C++',
