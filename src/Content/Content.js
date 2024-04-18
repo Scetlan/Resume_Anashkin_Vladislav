@@ -46,6 +46,7 @@ const listContents = {
       nameСompany: 'Tinkoff Bank',
       link: 'https://www.tinkoff.ru/',
       experience: '2020-н.в',
+      jobTitle: 'Software Engineer',
       tasks: [
         'Спроектировал и разработал BPMN процесс скоринга авто;',
         'Спроектировал и разработал BPMN процесс обработки входящей корреспонденции. Сократил сроки обработки документов и улучшил качество сопровождения продукта;',
@@ -73,6 +74,7 @@ const listContents = {
       nameСompany: 'ПАО "завод "Красное знамя""',
       link: 'https://www.kznamya.ru/#0',
       experience: '2020-2019',
+      jobTitle: 'Engineer',
       tasks: [
         'Разработка ПО для desktop приложений в кроссплатформенной среде разработки QT на языке C++',
         'Разработка ПО для микроконтроллеров на языке C.'

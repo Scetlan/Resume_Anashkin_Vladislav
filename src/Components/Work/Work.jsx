@@ -8,7 +8,7 @@ function Work() {
     <div className={classes.works}>
       <h2 className="works-title">Place of work</h2>
       <ul className={classes.organizations}>
-        {works.map(({ nameСompany, experience, tasks, usedStack, link }) => {
+        {works.map(({ nameСompany, experience, tasks, usedStack, link, jobTitle }) => {
           return (
             <li key={nameСompany} className={classes.organization}>
               <div className={classes.basic}>
@@ -20,6 +20,7 @@ function Work() {
                 <span className={classes.time}>{experience}</span>
               </div>
               <div className={classes.description}>
+                <p className={classes.jobTitle}>Job Title: {jobTitle}</p>
                 <ul className={classes.tasks}>
                   {tasks.map(task => (
                     <li className={classes.task}>{task}</li>
