@@ -24,7 +24,7 @@ function Education() {
       <div className={classes.courses}>
         <h2 className="course-title">Additional courses</h2>
         <ul className={classes.organizations}>
-          {courses.map(({ institution, experience, topic, link }) => {
+          {courses.map(({ institution, experience, topic, link, сertificate }) => {
             return (
               <li key={`${institution}-courses`} className={classes.organization}>
                 <div className={classes.basic}>
@@ -34,7 +34,7 @@ function Education() {
                 <p className={classes.desc}>Topic: {topic}</p>
                 {link === '' ? null : (
                   <a className={classes.desc} href={link}>
-                    Сертификат
+                    {сertificate}
                   </a>
                 )}
               </li>
