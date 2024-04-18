@@ -1,11 +1,18 @@
+.title__user {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  border: none;
+}
+
 .aside__info {
   display: flex;
   margin-bottom: 10px;
 }
 
 .avatar {
-  width: 120px;
-  height: 150px;
+  width: 140px;
+  height: 172px;
   margin-right: 20px;
   border-radius: 20px;
 }
@@ -13,7 +20,7 @@
 .contact {
   display: grid;
   row-gap: 15px;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .contact__item {
@@ -22,17 +29,26 @@
   .link {
     font-size: 15px;
     text-decoration: none;
+    margin: auto 0;
     color: rgb(97, 125, 176);
     &:focus {
       color: rgb(87, 133, 220);
+      border-bottom: 1px solid rgb(141, 167, 217);
     }
     &:hover {
       color: rgb(12, 59, 148);
+      border-bottom: 1px solid rgb(141, 167, 217);
     }
     &:active {
       color: rgb(24, 52, 106);
+      border-bottom: 1px solid rgb(141, 167, 217);
     }
   }
+}
+
+.img__icon {
+  margin-bottom: 0px;
+  padding-right: 7px;
 }
 
 @media screen and (min-width: 800px) {
@@ -45,15 +61,15 @@
     width: 264px;
     height: 340px;
 
+    margin-right: 0;
     border-radius: 20px;
-  }
-
-  .img__icon {
-    margin-bottom: 0px;
-    padding-right: 7px;
   }
 
   .link {
     font-size: 14px;
+  }
+
+  .contact {
+    padding-top: 20px;
   }
 }

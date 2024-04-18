@@ -10,8 +10,8 @@
 .list-blog {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 25px;
+  column-gap: 9px;
+  row-gap: 15px;
 }
 
 .skill {
@@ -19,7 +19,7 @@
   color: aliceblue;
   background-color: rgba(28, 59, 121);
   border: 3px solid rgb(138, 171, 237);
-  border-radius: 100%;
+  border-radius: 20px;
 }
 
 .lang {

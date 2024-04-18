@@ -8,7 +8,7 @@ function BriefInformation() {
   return (
     <div className={classes['tab-one']}>
       <div className="about-me">
-        <h1 className="title">About me</h1>
+        <h2 className="title">About me</h2>
         <p className={classes.desc}>{aboutMeText}</p>
       </div>
       <div className={classes.skills}>
@@ -22,7 +22,7 @@ function BriefInformation() {
         </ul>
       </div>
       <div className={classes.languages}>
-        <h1 className={classes.title}>Languages</h1>
+        <h2 className={classes.title}>Languages</h2>
         <ul className={classes['list-blog']}>
           {languages.map(({ id, text }) => (
             <li key={id} className={classes.lang}>
